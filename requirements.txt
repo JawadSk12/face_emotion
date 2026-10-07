@@ -9,6 +9,4 @@ pyyaml
 
 fastapi
 uvicorn
-sqlalchemy
 pydantic
-websockets

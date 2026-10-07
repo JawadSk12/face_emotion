@@ -1,11 +1,8 @@
 paths:
   fer_csv: "data/fer2013/fer2013.csv"
-  known_faces_dir: "data/known_faces"
   logs_csv: "data/logs/events.csv"
   emotion_model: "models/emotion_model.h5"
   training_artifacts_dir: "models/training"
-  face_recognizer: "models/face_recognizer.pkl"
-  face_labels: "models/face_labels.pkl"
   haar_cascade: "models/haarcascade_frontalface_default.xml"
 
 video:

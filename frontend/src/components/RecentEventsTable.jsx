@@ -1,6 +1,6 @@
 import React from "react";
 
-const AttendanceTable = ({ events, loading }) => {
+const RecentEventsTable = ({ events, loading }) => {
   if (loading) {
     return <p className="muted-text">Loading events…</p>;
   }
@@ -9,7 +9,7 @@ const AttendanceTable = ({ events, loading }) => {
     return <p className="muted-text">No events recorded yet.</p>;
   }
 
-  const rows = events.slice().reverse(); // newest at bottom or top depending on taste
+  const rows = events.slice().reverse();
 
   return (
     <div className="table-wrapper">
@@ -21,10 +21,10 @@ const AttendanceTable = ({ events, loading }) => {
           </tr>
         </thead>
         <tbody>
-          {rows.map((e, idx) => (
-            <tr key={idx}>
-              <td>{e.timestamp}</td>
-              <td>{e.emotion}</td>
+          {rows.map((event, index) => (
+            <tr key={`${event.timestamp}-${index}`}>
+              <td>{event.timestamp}</td>
+              <td>{event.emotion}</td>
             </tr>
           ))}
         </tbody>
@@ -33,4 +33,4 @@ const AttendanceTable = ({ events, loading }) => {
   );
 };
 
-export default AttendanceTable;
+export default RecentEventsTable;

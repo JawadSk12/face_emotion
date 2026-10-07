@@ -2,7 +2,7 @@ import React from "react";
 import VideoFeed from "./VideoFeed";
 import EmotionChart from "./EmotionChart";
 import EmotionDistribution from "./EmotionDistribution";
-import AttendanceTable from "./AttendanceTable";
+import RecentEventsTable from "./RecentEventsTable";
 import SummaryCards from "./SummaryCards";
 import useEventsData from "./useEventsData";
 
@@ -40,7 +40,7 @@ const Dashboard = () => {
               Failed to load events. Check backend at http://localhost:8000
             </p>
           )}
-          <AttendanceTable events={events} loading={loading} />
+          <RecentEventsTable events={events} loading={loading} />
         </div>
       </section>
     </div>
