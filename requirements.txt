@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn>=1.7,<1.8
+opencv-python>=4.10,<5
+tensorflow
+pyyaml
+
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+websockets

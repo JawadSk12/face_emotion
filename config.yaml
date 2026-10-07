@@ -1,0 +1,21 @@
+paths:
+  fer_csv: "data/fer2013/fer2013.csv"
+  known_faces_dir: "data/known_faces"
+  logs_csv: "data/logs/events.csv"
+  emotion_model: "models/emotion_model.h5"
+  training_artifacts_dir: "models/training"
+  face_recognizer: "models/face_recognizer.pkl"
+  face_labels: "models/face_labels.pkl"
+  haar_cascade: "models/haarcascade_frontalface_default.xml"
+
+video:
+  camera_index: 0
+
+thresholds:
+  emotion_min_confidence: 0.70
+  event_cooldown_seconds: 5
+
+inference:
+  # Selected on FER-2013 validation to reduce the model's Neutral overprediction.
+  emotion_logit_adjustments:
+    Neutral: -0.75

@@ -1,0 +1,32 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Local datasets, webcam captures, and application logs
+data/
+notebooks/data/
+
+# Generated training/evaluation artifacts and local identity data
+models/training/
+models/evaluation/
+models/*.keras
+models/*.h5
+!models/emotion_model.h5
+models/*.pkl
+notebooks/models/
+
+# Frontend install and build output
+frontend/node_modules/
+frontend/dist/
+
